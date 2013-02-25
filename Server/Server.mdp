@@ -24,35 +24,17 @@
     <File subtype="Code" buildaction="Compile" name="BotConnection.cs" />
     <File subtype="Code" buildaction="Compile" name="Servers.cs" />
     <File subtype="Code" buildaction="Compile" name="Main.cs" />
-    <File subtype="Code" buildaction="Compile" name="Settings.cs" />
-    <File subtype="Code" buildaction="Compile" name="Statistic.cs" />
     <File subtype="Code" buildaction="Compile" name="Properties/AssemblyInfo.cs" />
     <File subtype="Directory" buildaction="Compile" name="Connection" />
     <File subtype="Code" buildaction="Compile" name="Connection/Connection.cs" />
     <File subtype="Code" buildaction="Compile" name="Connection/AConnection.cs" />
-    <File subtype="Directory" buildaction="Compile" name="Plugin" />
-    <File subtype="Code" buildaction="Compile" name="Plugin/APlugin.cs" />
-    <File subtype="Code" buildaction="Compile" name="Plugin/ABackendPlugin.cs" />
     <File subtype="Code" buildaction="Compile" name="Connection/AIrcConnection.cs" />
-    <File subtype="Directory" buildaction="Compile" name="Helper" />
-    <File subtype="Code" buildaction="Compile" name="Helper/FileSystem.cs" />
-    <File subtype="Code" buildaction="Compile" name="Helper/PartBytesObject.cs" />
-    <File subtype="Code" buildaction="Compile" name="Helper/FileActions.cs" />
-    <File subtype="Code" buildaction="Compile" name="Helper/Process.cs" />
-    <File subtype="Code" buildaction="Compile" name="Helper/FileHandler.cs" />
-    <File subtype="Code" buildaction="Compile" name="Helper/FileHandlerProcess.cs" />
     <File subtype="Directory" buildaction="Compile" name="Irc" />
     <File subtype="Code" buildaction="Compile" name="Irc/Parser.cs" />
     <File subtype="Code" buildaction="Compile" name="Irc/PrivateMessage.cs" />
     <File subtype="Code" buildaction="Compile" name="Irc/AParser.cs" />
     <File subtype="Code" buildaction="Compile" name="Irc/IntValue.cs" />
     <File subtype="Code" buildaction="Compile" name="Irc/Notice.cs" />
-    <File subtype="Directory" buildaction="Compile" name="Worker" />
-    <File subtype="Code" buildaction="Compile" name="Worker/AWorker.cs" />
-    <File subtype="Code" buildaction="Compile" name="Worker/ALoopWorker.cs" />
-    <File subtype="Code" buildaction="Compile" name="Worker/Workers.cs" />
-    <File subtype="Code" buildaction="Compile" name="Worker/SnapshotWorker.cs" />
-    <File subtype="Code" buildaction="Compile" name="Worker/BotWatchdogWorker.cs" />
     <File subtype="Code" buildaction="Compile" name="Irc/Nickserv.cs" />
   </Contents>
   <References>
@@ -61,6 +43,9 @@
     <ProjectReference specificVersion="False" type="Gac" localcopy="False" refto="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <ProjectReference type="Project" localcopy="True" refto="Core" />
     <ProjectReference specificVersion="False" type="Assembly" localcopy="True" refto="../packages/log4net.2.0.0/lib/net40-full/log4net.dll" />
+    <ProjectReference type="Project" localcopy="True" refto="Server.Plugin" />
+    <ProjectReference type="Project" localcopy="True" refto="Server.Worker" />
+    <ProjectReference type="Project" localcopy="True" refto="Server.Util" />
   </References>
   <LanguageParameters ApplicationIcon="." ctype="CSharpProjectParameters" />
 </Project>

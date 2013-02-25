@@ -30,12 +30,13 @@ using System.Reflection;
 
 using XG.Core;
 using XG.Server.Connection;
+using XG.Server.Util;
 
 using log4net;
 
 namespace XG.Server
 {
-	public delegate void PacketBotConnectDelegate(Packet aPack, BotConnection aCon);
+	delegate void PacketBotConnectDelegate(Packet aPack, BotConnection aCon);
 
 	/// <summary>
 	/// 	This class describes the connection to a single irc bot
@@ -44,7 +45,7 @@ namespace XG.Server
 	/// 	- writing the data into the file
 	/// 	- checking if the data matches the given file (rollback check)
 	/// </summary>
-	public class BotConnection : AIrcConnection
+	class BotConnection : AIrcConnection
 	{
 		#region VARIABLES
 

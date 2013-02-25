@@ -27,7 +27,8 @@ using System;
 using System.Reflection;
 
 using XG.Core;
-using XG.Server.Helper;
+using XG.Server.Util;
+using XG.Server.Util.Helper;
 
 using log4net;
 
@@ -36,7 +37,7 @@ namespace XG.Server.Irc
 	/// <summary>
 	/// 	this class parses all messages comming from the server, channel and bot
 	/// </summary>
-	public class Parser : AParser
+	class Parser : AParser
 	{
 		#region VARIABLES
 

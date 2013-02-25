@@ -1,5 +1,5 @@
 // 
-//  Filesystem.cs
+//  FileHandlerProcess.cs
 //  This file is part of XG - XDCC Grabscher
 //  http://www.larsformella.de/lang/en/portfolio/programme-software/xg
 //
@@ -23,37 +23,14 @@
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 //  
 
-using System.IO;
-
-using NUnit.Framework;
-
-using XG.Server.Helper;
-
-namespace XG.Server.Test.Helper
+namespace XG.Server.Util
 {
-	[TestFixture]
-	public class Filesystem
+	public class FileHandlerProcess
 	{
-		[Test]
-		public void MoveFile()
-		{
-			const string fileNameOld = "test1.txt";
-			const string fileNameNew = "test2.txt";
+		public string Command { get; set; }
 
-			File.Delete(fileNameOld);
-			File.Delete(fileNameNew);
+		public string Arguments { get; set; }
 
-			bool result = FileSystem.MoveFile(fileNameOld, fileNameNew);
-			Assert.AreEqual(false, result);
-
-			File.Create(fileNameOld).Close();
-
-			result = FileSystem.MoveFile(fileNameOld, fileNameNew);
-			Assert.AreEqual(true, result);
-			Assert.AreEqual(false, File.Exists(fileNameOld));
-			Assert.AreEqual(true, File.Exists(fileNameNew));
-
-			File.Delete(fileNameNew);
-		}
+		public FileHandlerProcess Next { get; set; }
 	}
 }

@@ -29,15 +29,15 @@ using NUnit.Framework;
 using XG.Server.Plugin.General.Webserver.Websocket;
 using System.Collections.Generic;
 
-namespace XG.Server.Plugin.General.Webserver.Websocket.Test
+namespace XG.Server.Plugin.General.Webserver.Test.Websocket
 {
 	[TestFixture()]
-	public class Server
+	class Server
 	{
 		[Test()]
 		public void FilterDuplicateEntries ()
 		{
-			var server = new Websocket.Server();
+			var server = new General.Webserver.Websocket.Server();
 
 			var oldList = new List<Int64[]>();
 			oldList.Add(new Int64[]{11, 1});

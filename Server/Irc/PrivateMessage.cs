@@ -30,13 +30,14 @@ using System.Text.RegularExpressions;
 using System.Threading;
 
 using XG.Core;
-using XG.Server.Helper;
+using XG.Server.Util;
+using XG.Server.Util.Helper;
 
 using log4net;
 
 namespace XG.Server.Irc
 {
-	public class PrivateMessage : AParser
+	class PrivateMessage : AParser
 	{
 		#region VARIABLES
 

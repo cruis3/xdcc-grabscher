@@ -30,12 +30,13 @@ using System.Reflection;
 using XG.Core;
 using XG.Server.Connection;
 using XG.Server.Irc;
+using XG.Server.Util;
 
 using log4net;
 
 namespace XG.Server
 {
-	public delegate void ServerSocketErrorDelegate(Core.Server aServer, SocketErrorCode aValue);
+	delegate void ServerSocketErrorDelegate(Core.Server aServer, SocketErrorCode aValue);
 
 	/// <summary>
 	/// 	This class describes the connection to a single irc server
@@ -44,7 +45,7 @@ namespace XG.Server
 	/// 	- creating and removing packets on the fly (if the bot posts them into the channel)
 	/// 	- communicate with the bot to handle downloads
 	/// </summary>
-	public class ServerConnection : AIrcConnection
+	class ServerConnection : AIrcConnection
 	{
 		#region VARIABLES
 

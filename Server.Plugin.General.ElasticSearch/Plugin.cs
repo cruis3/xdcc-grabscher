@@ -27,14 +27,19 @@ using System;
 using System.Collections.Generic;
 
 using XG.Core;
+using XG.Server.Util;
 
 using Nest;
+
+using log4net;
 
 namespace XG.Server.Plugin.General.ElasticSearch
 {
 	public class Plugin : APlugin
 	{
 		#region VARIABLES
+
+		static readonly ILog Log = LogManager.GetLogger(typeof (Plugin));
 
 		ElasticClient _client;
 		string _index = "xg";
@@ -175,7 +180,11 @@ namespace XG.Server.Plugin.General.ElasticSearch
 
 			if (_client != null)
 			{
-				_client.Index(snap, _index, "snapshot", (int)snap.Timestamp);
+				var result = _client.Index(snap, _index, "snapshot", (int)snap.Timestamp);
+				if (!result.OK)
+				{
+					Log.Error("Index(Snapshot) was not successful");
+				}
 			}
 		}
 
@@ -207,7 +216,11 @@ namespace XG.Server.Plugin.General.ElasticSearch
 			if (_client != null && myObj != null)
 			{
 				string type = myObj.GetType().Name.ToLower();
-				_client.IndexAsync(myObj, _index, type, myObj.Guid.ToString());
+				var result = _client.Index(myObj, _index, type, myObj.Guid.ToString());
+				if (!result.OK)
+				{
+					Log.Error("Index(" + aObj + ") was not successful");
+				}
 			}
 		}
 
@@ -216,7 +229,11 @@ namespace XG.Server.Plugin.General.ElasticSearch
 			if (_client != null && (aObj is Core.Server || aObj is Channel || aObj is Bot || aObj is Packet))
 			{
 				string type = aObj.GetType().Name.ToLower();
-				_client.DeleteByIdAsync(_index, type, aObj.Guid.ToString());
+				var result = _client.DeleteById(_index, type, aObj.Guid.ToString());
+				if (!result.OK)
+				{
+					Log.Error("Remove(" + aObj + ") was not successful");
+				}
 			}
 		}
 

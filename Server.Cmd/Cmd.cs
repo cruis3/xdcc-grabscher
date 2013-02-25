@@ -31,7 +31,7 @@ using System;
 using System.IO;
 using System.Threading;
 
-using XG.Server.Plugin;
+using XG.Server.Util;
 
 using log4net;
 using log4net.Appender;

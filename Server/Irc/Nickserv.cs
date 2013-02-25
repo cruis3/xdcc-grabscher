@@ -27,11 +27,13 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
+using XG.Server.Util;
+
 using log4net;
 
 namespace XG.Server.Irc
 {
-	public class Nickserv : AParser
+	class Nickserv : AParser
 	{
 		readonly List<Core.Server> _authenticatedServer = new List<Core.Server>();
 

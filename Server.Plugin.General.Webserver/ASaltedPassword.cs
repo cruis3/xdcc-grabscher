@@ -25,7 +25,7 @@
 
 namespace XG.Server.Plugin.General.Webserver
 {
-	public abstract class ASaltedPassword : APlugin
+	abstract class ASaltedPassword : APlugin
 	{
 		public string Salt { get; set; }
 

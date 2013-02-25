@@ -27,6 +27,8 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 
+using XG.Server.Util;
+
 namespace XG.Server.Plugin.General.Webserver
 {
 	public class Plugin : APlugin

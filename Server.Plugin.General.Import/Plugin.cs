@@ -29,7 +29,8 @@ using HtmlAgilityPack;
 
 using XG.Core;
 using XG.Server.Plugin;
-using XG.Server.Helper;
+using XG.Server.Util;
+using XG.Server.Util.Helper;
 
 namespace XG.Server.Plugin.General.Import
 {

@@ -26,11 +26,13 @@
 using System.Net;
 using System.Reflection;
 
+using XG.Server.Util;
+
 using log4net;
 
 namespace XG.Server.Plugin.General.Webserver.Webserver
 {
-	public class Server : ASaltedPassword
+	class Server : ASaltedPassword
 	{
 		#region VARIABLES
 

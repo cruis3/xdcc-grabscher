@@ -32,7 +32,7 @@ using XG.Core;
 
 namespace XG.Server.Test.Irc
 {
-	public abstract class AParser
+	abstract class AParser
 	{
 		protected Core.Server Server;
 		protected Channel Channel;

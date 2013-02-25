@@ -29,7 +29,7 @@ using XG.Core;
 
 namespace XG.Server.Connection
 {
-	public abstract class AConnection
+	abstract class AConnection
 	{
 		public string Hostname { get; set; }
 

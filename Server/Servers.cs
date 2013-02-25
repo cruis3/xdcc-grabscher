@@ -31,8 +31,9 @@ using System.Reflection;
 using System.Threading;
 
 using XG.Core;
-using XG.Server.Helper;
 using XG.Server.Irc;
+using XG.Server.Util;
+using XG.Server.Util.Helper;
 
 using log4net;
 
@@ -49,7 +50,7 @@ namespace XG.Server
 	/// 	- writing files to disk
 	/// 	- timering some clean up tasks
 	/// </summary>
-	public class Servers
+	class Servers
 	{
 		#region VARIABLES
 

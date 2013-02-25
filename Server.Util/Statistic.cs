@@ -33,7 +33,7 @@ using System.Xml.Serialization;
 
 using log4net;
 
-namespace XG.Server
+namespace XG.Server.Util
 {
 	public enum StatisticType
 	{

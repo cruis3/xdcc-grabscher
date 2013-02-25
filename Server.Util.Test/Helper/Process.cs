@@ -28,10 +28,10 @@ using System.IO;
 
 using NUnit.Framework;
 
-namespace XG.Server.Test.Helper
+namespace XG.Server.Util.Test.Helper
 {
 	[TestFixture]
-	public class Process
+	class Process
 	{
 		[Test]
 		public void Run()
@@ -54,7 +54,7 @@ namespace XG.Server.Test.Helper
 
 		bool Compress(string file, string archive, string password)
 		{
-			var p = new Server.Helper.Process
+			var p = new Server.Util.Helper.Process
 			        {Command = "rar", Arguments = "a " + (String.IsNullOrEmpty(password) ? "" : "-p" + password + " ") + archive + " " + file};
 
 			return p.Run();
@@ -62,7 +62,7 @@ namespace XG.Server.Test.Helper
 
 		bool DeCompress(string archive)
 		{
-			var p = new Server.Helper.Process {Command = "unrar", Arguments = "e -p- " + archive};
+			var p = new Server.Util.Helper.Process {Command = "unrar", Arguments = "e -p- " + archive};
 
 			return p.Run();
 		}

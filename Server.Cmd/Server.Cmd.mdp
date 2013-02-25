@@ -31,6 +31,7 @@
   <Contents>
     <File subtype="Code" buildaction="Compile" name="Cmd.cs" />
     <File subtype="Code" buildaction="Compile" name="Properties/AssemblyInfo.cs" />
+    <File subtype="Directory" buildaction="Compile" name="Neuer Ordner" />
   </Contents>
   <References>
     <ProjectReference type="Gac" localcopy="True" refto="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
@@ -41,6 +42,7 @@
     <ProjectReference type="Project" localcopy="True" refto="Server.Plugin.General.Webserver" />
     <ProjectReference specificVersion="False" type="Assembly" localcopy="True" refto="../packages/log4net.2.0.0/lib/net40-full/log4net.dll" />
     <ProjectReference type="Project" localcopy="True" refto="Server.Plugin.General.ElasticSearch" />
+    <ProjectReference type="Project" localcopy="True" refto="Server.Util" />
   </References>
   <LanguageParameters StartupObject="XG.Server.Cmd.Cmd" ctype="CSharpProjectParameters" />
 </Project>

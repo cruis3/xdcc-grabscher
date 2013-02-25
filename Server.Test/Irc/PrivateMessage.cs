@@ -32,7 +32,7 @@ using XG.Core;
 namespace XG.Server.Test.Irc
 {
 	[TestFixture]
-	public class PrivateMessage : AParser
+	class PrivateMessage : AParser
 	{
 		public PrivateMessage()
 		{

@@ -36,12 +36,15 @@ using System.Reflection;
 
 using XG.Core;
 using XG.Server.Plugin.General.Webserver.Object;
+using XG.Server.Util;
 
 using log4net;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("Server.Plugin.General.Webserver.Test")]
 namespace XG.Server.Plugin.General.Webserver.Websocket
 {
-	public class Server : ASaltedPassword
+	class Server : ASaltedPassword
 	{
 		#region VARIABLES
 

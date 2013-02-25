@@ -29,12 +29,13 @@ using System.Net.Sockets;
 using System.Reflection;
 
 using XG.Core;
+using XG.Server.Util;
 
 using log4net;
 
 namespace XG.Server.Connection
 {
-	public class Connection : AConnection
+	class Connection : AConnection
 	{
 		#region VARIABLES
 

@@ -28,7 +28,7 @@ using NUnit.Framework;
 namespace XG.Core.Test
 {
 	[TestFixture]
-	public class Helper
+	class Helper
 	{
 		[Test]
 		public void ShrinkFileName()

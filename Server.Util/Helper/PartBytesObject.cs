@@ -1,5 +1,5 @@
-﻿// 
-//  Workers.cs
+// 
+//  PartBytesObject.cs
 //  This file is part of XG - XDCC Grabscher
 //  http://www.larsformella.de/lang/en/portfolio/programme-software/xg
 //
@@ -23,38 +23,14 @@
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 //  
 
-using System.Collections.Generic;
+using XG.Core;
 
-namespace XG.Server.Worker
+namespace XG.Server.Util.Helper
 {
-	class Workers
+	public class PartBytesObject
 	{
-		#region VARIABLES
+		public FilePart Part { get; set; }
 
-		readonly List<AWorker> _workers;
-
-		#endregion
-
-		#region FUNCTIONS
-
-		public Workers()
-		{
-			_workers = new List<AWorker>();
-		}
-
-		public void Add(AWorker aWorker)
-		{
-			_workers.Add(aWorker);
-		}
-
-		public void StopAll()
-		{
-			foreach (AWorker worker in _workers)
-			{
-				worker.Stop();
-			}
-		}
-
-		#endregion
+		public byte[] Bytes { get; set; }
 	}
 }

@@ -30,7 +30,7 @@ using NUnit.Framework;
 namespace XG.Core.Test
 {
 	[TestFixture]
-	public class Objects
+	class Objects
 	{
 		bool _childAdded;
 

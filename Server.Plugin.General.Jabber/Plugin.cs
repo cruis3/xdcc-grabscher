@@ -27,6 +27,7 @@ using System;
 using System.Linq;
 
 using XG.Core;
+using XG.Server.Util;
 
 using agsXMPP;
 using agsXMPP.protocol.client;
@@ -65,7 +66,7 @@ namespace XG.Server.Plugin.General.Jabber
 
 		#region EVENTHANDLER
 
-		protected new void FileChanged(AObject aObj)
+		protected override void FileChanged(AObject aObj, string[] aFields)
 		{
 			if (aObj is FilePart)
 			{

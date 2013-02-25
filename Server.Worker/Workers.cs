@@ -1,5 +1,5 @@
-// 
-//  FileHandlerProcess.cs
+﻿// 
+//  Workers.cs
 //  This file is part of XG - XDCC Grabscher
 //  http://www.larsformella.de/lang/en/portfolio/programme-software/xg
 //
@@ -23,14 +23,38 @@
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 //  
 
-namespace XG.Server.Helper
+using System.Collections.Generic;
+
+namespace XG.Server.Worker
 {
-	public class FileHandlerProcess
+	public class Workers
 	{
-		public string Command { get; set; }
+		#region VARIABLES
 
-		public string Arguments { get; set; }
+		readonly List<AWorker> _workers;
 
-		public FileHandlerProcess Next { get; set; }
+		#endregion
+
+		#region FUNCTIONS
+
+		public Workers()
+		{
+			_workers = new List<AWorker>();
+		}
+
+		public void Add(AWorker aWorker)
+		{
+			_workers.Add(aWorker);
+		}
+
+		public void StopAll()
+		{
+			foreach (AWorker worker in _workers)
+			{
+				worker.Stop();
+			}
+		}
+
+		#endregion
 	}
 }

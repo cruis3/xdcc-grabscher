@@ -34,7 +34,7 @@ using XG.Core;
 namespace XG.Server.Plugin.General.Webserver.Test
 {
 	[TestFixture]
-	public class Json
+	class Json
 	{
 		TimeZone _zone = TimeZone.CurrentTimeZone;
 

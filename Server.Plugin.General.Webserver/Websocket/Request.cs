@@ -30,7 +30,7 @@ using System;
 namespace XG.Server.Plugin.General.Webserver.Websocket
 {
 	[JsonObject(MemberSerialization.OptOut)]
-	public class Request
+	class Request
 	{
 		#region ENUMS
 

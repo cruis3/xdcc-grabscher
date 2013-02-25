@@ -25,12 +25,14 @@
 
 using System;
 
+using XG.Server.Util;
+
 using NUnit.Framework;
 
 namespace XG.Server.Test.Irc
 {
 	[TestFixture]
-	public class Notice : AParser
+	class Notice : AParser
 	{
 		public Notice()
 		{

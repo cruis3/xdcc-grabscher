@@ -32,7 +32,7 @@ using XG.Core;
 
 namespace XG.Server.Plugin.General.Webserver.Websocket
 {
-	public class User
+	class User
 	{
 		#region VARIABLES
 

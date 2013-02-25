@@ -28,11 +28,9 @@ using System.IO;
 using System.Reflection;
 using System.Xml.Serialization;
 
-using XG.Server.Helper;
-
 using log4net;
 
-namespace XG.Server
+namespace XG.Server.Util
 {
 	[Serializable]
 	public class Settings

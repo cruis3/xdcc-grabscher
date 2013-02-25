@@ -30,11 +30,13 @@ using System.Net;
 using System.Reflection;
 using System.Text;
 
+using XG.Server.Util;
+
 using log4net;
 
 namespace XG.Server.Plugin.General.Webserver.Webserver
 {
-	public class BrowserConnection : ASaltedPassword
+	class BrowserConnection : ASaltedPassword
 	{
 		#region VARIABLES
 

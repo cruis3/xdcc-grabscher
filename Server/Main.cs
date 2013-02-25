@@ -29,9 +29,10 @@ using System.Linq;
 using System.Reflection;
 
 using XG.Core;
-using XG.Server.Helper;
 using XG.Server.Irc;
 using XG.Server.Plugin;
+using XG.Server.Util;
+using XG.Server.Util.Helper;
 using XG.Server.Worker;
 
 using log4net;

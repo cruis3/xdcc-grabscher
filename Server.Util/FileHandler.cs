@@ -1,5 +1,5 @@
 // 
-//  PartBytesObject.cs
+//  FileHandler.cs
 //  This file is part of XG - XDCC Grabscher
 //  http://www.larsformella.de/lang/en/portfolio/programme-software/xg
 //
@@ -23,14 +23,12 @@
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 //  
 
-using XG.Core;
-
-namespace XG.Server.Helper
+namespace XG.Server.Util
 {
-	public class PartBytesObject
+	public class FileHandler
 	{
-		public FilePart Part { get; set; }
+		public string Regex { get; set; }
 
-		public byte[] Bytes { get; set; }
+		public FileHandlerProcess Process { get; set; }
 	}
 }

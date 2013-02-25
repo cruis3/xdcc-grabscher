@@ -26,7 +26,9 @@
   </Contents>
   <References>
     <ProjectReference type="Project" localcopy="True" refto="Core" />
-    <ProjectReference type="Project" localcopy="True" refto="Server" />
     <ProjectReference specificVersion="False" type="Assembly" localcopy="True" refto="../packages/log4net.2.0.0/lib/net40-full/log4net.dll" />
+    <ProjectReference type="Project" localcopy="True" refto="Server.Plugin" />
+    <ProjectReference type="Project" localcopy="True" refto="Server.Worker" />
+    <ProjectReference type="Project" localcopy="True" refto="Server.Util" />
   </References>
 </Project>

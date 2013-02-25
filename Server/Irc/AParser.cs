@@ -26,17 +26,19 @@
 using System;
 using System.Net;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 
 using XG.Core;
 
 using log4net;
 
+[assembly: InternalsVisibleTo("Server.Test")]
 namespace XG.Server.Irc
 {
 	public delegate void BotDelegate(Bot aBot);
 
-	public abstract class AParser
+	abstract class AParser
 	{
 		#region VARIABLES
 

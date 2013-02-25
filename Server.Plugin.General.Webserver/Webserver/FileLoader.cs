@@ -28,11 +28,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
+using XG.Server.Util;
+
 using log4net;
 
 namespace XG.Server.Plugin.General.Webserver.Webserver
 {
-	public class FileLoader
+	class FileLoader
 	{
 		#region VARIABLES
 

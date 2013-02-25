@@ -28,7 +28,7 @@ using Newtonsoft.Json;
 namespace XG.Server.Plugin.General.Webserver.Websocket
 {
 	[JsonObject(MemberSerialization.OptOut)]
-	public class Response
+	class Response
 	{
 		#region ENUMS
 

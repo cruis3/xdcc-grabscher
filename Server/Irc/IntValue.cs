@@ -28,12 +28,13 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 
 using XG.Core;
+using XG.Server.Util;
 
 using log4net;
 
 namespace XG.Server.Irc
 {
-	public class IntValue : AParser
+	class IntValue : AParser
 	{
 		#region PARSING
 

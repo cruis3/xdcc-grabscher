@@ -25,7 +25,7 @@
 
 namespace XG.Server.Test.Irc
 {
-	public class Parser : AParser
+	class Parser : AParser
 	{
 		public Parser()
 		{

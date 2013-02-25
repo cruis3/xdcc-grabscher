@@ -35,7 +35,7 @@ using XG.Core;
 
 using log4net;
 
-namespace XG.Server.Helper
+namespace XG.Server.Util.Helper
 {
 	public class FileActions
 	{

@@ -47,7 +47,7 @@ namespace XG.Server.Worker
 			                where channel.Connected
 			                from bot in channel.Bots
 			                where
-				                !bot.Connected && (DateTime.Now - bot.LastContact).TotalSeconds > Settings.Instance.BotOfflineTime &&
+				                !bot.Connected && (DateTime.Now - bot.LastContact).TotalSeconds > 7200 &&
 				                bot.OldestActivePacket() == null
 			                select bot).ToArray();
 

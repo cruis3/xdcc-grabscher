@@ -30,7 +30,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading;
 
 using XG.Core;
-using XG.Server.Helper;
+using XG.Server.Util;
+using XG.Server.Util.Helper;
 
 using log4net;
 

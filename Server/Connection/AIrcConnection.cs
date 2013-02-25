@@ -24,11 +24,11 @@
 //  
 
 using XG.Core;
-using XG.Server.Helper;
+using XG.Server.Util.Helper;
 
 namespace XG.Server.Connection
 {
-	public abstract class AIrcConnection
+	abstract class AIrcConnection
 	{
 		public FileActions FileActions { set; get; }
 
