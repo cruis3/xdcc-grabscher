@@ -120,5 +120,11 @@ translatedArray =
 	"Disabled": "Deaktiviert",
 	"Count": "Zähler",
 	"Time": "Zeit",
-	"Human readable dates": "Lesbare Zeiten"
+	"Human readable dates": "Lesbare Zeiten",
+	
+	/* ************************************************************************************************************** */
+	/* HELP                                                                                                           */
+	/* ************************************************************************************************************** */
+	
+	"help1": "Hallo, das ist XG. Zunächst willst du bestimmt einen Server hinzufügen, klick hier!"
 };

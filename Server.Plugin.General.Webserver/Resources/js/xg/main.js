@@ -175,6 +175,13 @@ var XGMain = (function()
 				grid.invalidate();
 			});
 		element2.attr("checked", cookie.getCookie("humanDates", "0") == "1");
+
+		$("#helpButton")
+			.button(/*{icons: { primary: "icon-circle-plus" }}*/)
+			.click( function()
+			{
+				introJs().start();
+			});
 	}
 
 	/**

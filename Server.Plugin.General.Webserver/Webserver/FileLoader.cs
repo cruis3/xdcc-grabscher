@@ -49,6 +49,7 @@ namespace XG.Server.Plugin.General.Webserver.Webserver
 			"jquery-ui",
 			"slick.grid",
 			"layout-default",
+			"introjs.min",
 			"xg"
 		};
 
@@ -70,6 +71,7 @@ namespace XG.Server.Plugin.General.Webserver.Webserver
 			"external/slick.grid",
 			"external/slick.dataview",
 			"external/slick.rowselectionmodel",
+			"external/intro.min",
 			"i18n/moment/#LANGUAGE_SHORT#",
 			"i18n/xg/#LANGUAGE_SHORT#",
 			"xg/enum",
